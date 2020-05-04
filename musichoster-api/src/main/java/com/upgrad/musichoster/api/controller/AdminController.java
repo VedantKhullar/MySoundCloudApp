@@ -28,12 +28,17 @@ public class AdminController {
 
         MusicDetailsResponse musicDetailsResponse = new MusicDetailsResponse().music(musicEntity.getMusic()).id((int) musicEntity.getId()).name(musicEntity.getName()).description(musicEntity.getDescription()).status(musicEntity.getStatus());
 
+        return new ResponseEntity<MusicDetailsResponse>(musicDetailsResponse,HttpStatus.OK);
     }
 
 
     @RequestMapping(method = RequestMethod.PUT, path = "/musics/update/{music_id}", consumes = MediaType.APPLICATION_JSON_UTF8_VALUE, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
     public ResponseEntity<UpdateMusicResponse> updateMusic(@RequestBody(required = false) final UpdateMusicRequest updateMusicRequest, @PathVariable("music_id") final long music_id, @RequestHeader("authorization") final String authorization) throws MusicNotFoundException, UnauthorizedException, UserNotSignedInException {
         MusicEntity musicEntity = new MusicEntity();
+
+
+
+
     }
 
     @RequestMapping(method = RequestMethod.PUT, path = "/musics/updatestatus/{music_id}/{status}", consumes = MediaType.APPLICATION_JSON_UTF8_VALUE, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)

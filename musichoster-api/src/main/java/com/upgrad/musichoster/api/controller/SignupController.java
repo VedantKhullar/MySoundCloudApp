@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.upgrad.musichoster.api.model.*;
 import java.util.UUID;
 
-@RequestMapping("/")
+@RequestMapping("/signup")
 public class SignupController {
 
     @Autowired
@@ -26,6 +26,8 @@ public class SignupController {
             throws SignUpRestrictedException {
 
         final UserEntity userEntity = new UserEntity();
+
+        userEntity.se
 
     }
 }

@@ -30,5 +30,8 @@ public class MusicUploadController {
 
         final MusicEntity createdmusicEntity = musicUploadService.upload(musicEntity, authorization);
 
+        MusicUploadResponse uploadResponse = new MusicUploadResponse().id(String.valueOf(musicEntity.getId())).status("Music Uploaded");
+
+        return new ResponseEntity<>(uploadResponse,HttpStatus.OK);
     }
 }

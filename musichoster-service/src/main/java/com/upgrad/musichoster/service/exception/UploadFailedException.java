@@ -27,4 +27,11 @@ public class UploadFailedException extends Exception {
         super.printStackTrace(s);
     }
 
+    public String getCode() {
+        return code;
+    }
+
+    public String getErrorMessage() {
+        return errorMessage;
+    }
 }

@@ -8,10 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import com.upgrad.musichoster.api.model.*;
 import java.util.UUID;
 
@@ -36,10 +33,10 @@ public class SignupController {
         userEntity.setMobilePhone(signupUserRequest.getMobileNumber());
         userEntity.setPassword(signupUserRequest.getPassword());
         userEntity.setSalt("1234abc");
-        userEntity.setRole("nonadmin");
+        userEntity.setRole("admin");
 
-        final UserEntity creaUserEntity = signupBusinessService.signup(userEntity);
-        SignupUserResponse userResponse = new SignupUserResponse().id(creaUserEntity.getUuid()).status("USER SUCCESSFULLY REGISTERED");
+        final UserEntity createUserEntity = signupBusinessService.signup(userEntity);
+        SignupUserResponse userResponse = new SignupUserResponse().id(createUserEntity.getUuid()).status("USER SUCCESSFULLY REGISTERED");
         return new ResponseEntity<>(userResponse,HttpStatus.CREATED);
 
     }

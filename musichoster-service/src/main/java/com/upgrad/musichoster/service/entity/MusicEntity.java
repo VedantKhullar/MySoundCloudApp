@@ -1,6 +1,7 @@
 package com.upgrad.musichoster.service.entity;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import java.io.Serializable;
 import java.time.ZonedDateTime;
@@ -13,8 +14,10 @@ public class MusicEntity implements Serializable {
 
 	@Id @Column(name = "ID") @GeneratedValue(strategy = GenerationType.IDENTITY) private long id;
 
-	@Column(name = "UUID") @Size(max = 64) private String uuid;
-
+	//@NotNull
+	//@Size(max = 64)
+	@Column(name = "UUID")
+	private String uuid;
 
 	@Column(name = "MUSIC") private String music;
 

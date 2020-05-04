@@ -47,7 +47,7 @@ public class AuthenticationServiceImpl implements AuthenticationService {
 			userDao.updateUser(userEntity);
 
 			userEntity.setLastLoginAt(now);
-			
+
 			return userAuthToken;
 		} else {
 			throw new AuthenticationFailedException("ATH-002", "Password is Incorrect");

@@ -27,7 +27,18 @@ public class SignupController {
 
         final UserEntity userEntity = new UserEntity();
 
-        userEntity.se
+        userEntity.setUuid(UUID.randomUUID().toString());
+        userEntity.setFirstName(signupUserRequest.getFirstName());
+        userEntity.setLastName(signupUserRequest.getLastName());
+        userEntity.setEmail(signupUserRequest.getEmailAddress());
+        userEntity.setMobilePhone(signupUserRequest.getMobileNumber());
+        userEntity.setPassword(signupUserRequest.getPassword());
+        userEntity.setSalt("1234abc");
+        userEntity.setRole("nonadmin");
+
+        final UserEntity creaUserEntity = signupBusinessService.signup(userEntity);
+        SignupUserResponse userResponse = new SignupUserResponse().id(creaUserEntity.getUuid()).status("USER SUCCESSFULLY REGISTERED");
+        return new ResponseEntity<>(userResponse,HttpStatus.CREATED);
 
     }
 }

@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e6b64117-b61d-4ad9-b3a7-7fc3c964cbcf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/MySoundCloudApp.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/musichoster-api/src/main/java/com/upgrad/musichoster/api/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/musichoster-api/src/main/java/com/upgrad/musichoster/api/controller/AdminController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/musichoster-api/src/main/java/com/upgrad/musichoster/api/controller/SignupController.java" beforeDir="false" afterPath="$PROJECT_DIR$/musichoster-api/src/main/java/com/upgrad/musichoster/api/controller/SignupController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/musichoster-service/src/main/java/com/upgrad/musichoster/service/entity/UserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/musichoster-service/src/main/java/com/upgrad/musichoster/service/entity/UserEntity.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

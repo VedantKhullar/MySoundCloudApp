@@ -2,58 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e6b64117-b61d-4ad9-b3a7-7fc3c964cbcf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/musichoster-api/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/musichoster-api/src/main/java/com/upgrad/musichoster/api/controller/AuthenticationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/musichoster-api/src/main/java/com/upgrad/musichoster/api/controller/AuthenticationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/musichoster-api/target/classes/com/upgrad/musichoster/api/MusicApiApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/musichoster-api/target/classes/com/upgrad/musichoster/api/config/SwaggerConfiguration.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/musichoster-api/target/classes/com/upgrad/musichoster/api/controller/AdminController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/musichoster-api/target/classes/com/upgrad/musichoster/api/controller/AuthenticationController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/musichoster-api/target/classes/com/upgrad/musichoster/api/controller/MusicUploadController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/musichoster-api/target/classes/com/upgrad/musichoster/api/controller/SignupController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/musichoster-api/target/classes/com/upgrad/musichoster/api/exception/RestExceptionHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/musichoster-api/target/classes/com/upgrad/musichoster/api/model/AuthorizedUserResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/musichoster-api/target/classes/com/upgrad/musichoster/api/model/ErrorResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/musichoster-api/target/classes/com/upgrad/musichoster/api/model/MusicDetailsResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/musichoster-api/target/classes/com/upgrad/musichoster/api/model/MusicUploadRequest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/musichoster-api/target/classes/com/upgrad/musichoster/api/model/MusicUploadResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/musichoster-api/target/classes/com/upgrad/musichoster/api/model/SignupUserRequest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/musichoster-api/target/classes/com/upgrad/musichoster/api/model/SignupUserResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/musichoster-api/target/classes/com/upgrad/musichoster/api/model/UpdateMusicRequest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/musichoster-api/target/classes/com/upgrad/musichoster/api/model/UpdateMusicResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/musichoster-api/target/classes/io/swagger/RFC3339DateFormat.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/musichoster-api/target/classes/io/swagger/Swagger2SpringBoot$ExitException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/musichoster-api/target/classes/io/swagger/Swagger2SpringBoot.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/musichoster-api/target/classes/io/swagger/api/ApiException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/musichoster-api/target/classes/io/swagger/api/ApiOriginFilter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/musichoster-api/target/classes/io/swagger/api/ApiResponseMessage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/musichoster-api/target/classes/io/swagger/api/NotFoundException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/musichoster-api/target/classes/io/swagger/configuration/HomeController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/musichoster-api/target/classes/io/swagger/configuration/SwaggerDocumentationConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/musichoster-service/src/main/java/com/upgrad/musichoster/service/entity/UserAuthTokenEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/musichoster-service/src/main/java/com/upgrad/musichoster/service/entity/UserAuthTokenEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/musichoster-service/target/classes/com/upgrad/musichoster/service/ServiceConfiguration.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/musichoster-service/target/classes/com/upgrad/musichoster/service/business/AdminServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/musichoster-service/target/classes/com/upgrad/musichoster/service/business/AuthenticationService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/musichoster-service/target/classes/com/upgrad/musichoster/service/business/AuthenticationServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/musichoster-service/target/classes/com/upgrad/musichoster/service/business/JwtTokenProvider.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/musichoster-service/target/classes/com/upgrad/musichoster/service/business/MusicUploadService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/musichoster-service/target/classes/com/upgrad/musichoster/service/business/MusicUploadServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/musichoster-service/target/classes/com/upgrad/musichoster/service/business/PasswordCryptographyProvider.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/musichoster-service/target/classes/com/upgrad/musichoster/service/business/SignupBusinessService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/musichoster-service/target/classes/com/upgrad/musichoster/service/business/SignupBusinessServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/musichoster-service/target/classes/com/upgrad/musichoster/service/common/ErrorCode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/musichoster-service/target/classes/com/upgrad/musichoster/service/common/GenericErrorCode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/musichoster-service/target/classes/com/upgrad/musichoster/service/common/UnexpectedException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/musichoster-service/target/classes/com/upgrad/musichoster/service/dao/MusicDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/musichoster-service/target/classes/com/upgrad/musichoster/service/dao/MusicDaoImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/musichoster-service/target/classes/com/upgrad/musichoster/service/dao/UserDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/musichoster-service/target/classes/com/upgrad/musichoster/service/dao/UserDaoImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/musichoster-service/target/classes/com/upgrad/musichoster/service/entity/MusicEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/musichoster-service/target/classes/com/upgrad/musichoster/service/entity/MusicEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/musichoster-service/target/classes/com/upgrad/musichoster/service/entity/UserAuthTokenEntity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/musichoster-service/target/classes/com/upgrad/musichoster/service/entity/UserEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/musichoster-service/target/classes/com/upgrad/musichoster/service/entity/UserEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/musichoster-service/target/classes/com/upgrad/musichoster/service/exception/AuthenticationFailedException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/musichoster-service/target/classes/com/upgrad/musichoster/service/exception/SignUpRestrictedException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/musichoster-service/target/classes/com/upgrad/musichoster/service/exception/UploadFailedException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/musichoster-service/src/main/java/com/upgrad/musichoster/service/business/AuthenticationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/musichoster-service/src/main/java/com/upgrad/musichoster/service/business/AuthenticationServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -15,6 +15,8 @@ import org.springframework.web.bind.annotation.RestController;
 import com.upgrad.musichoster.api.model.*;
 import java.util.UUID;
 
+
+@RestController
 @RequestMapping("/signup")
 public class SignupController {
 

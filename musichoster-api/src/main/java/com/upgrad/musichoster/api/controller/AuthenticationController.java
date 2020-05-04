@@ -19,8 +19,9 @@ import java.util.Base64;
 import java.util.UUID;
 
 
-@RestController
+
 @RequestMapping("/")
+@RestController
 public class AuthenticationController {
     @Autowired
     private AuthenticationService authenticationService;

@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e6b64117-b61d-4ad9-b3a7-7fc3c964cbcf" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/postgresql_42_0_0.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/musichoster-api/src/main/java/com/upgrad/musichoster/api/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/musichoster-api/src/main/java/com/upgrad/musichoster/api/controller/AdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/musichoster-service/src/main/java/com/upgrad/musichoster/service/business/AdminServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/musichoster-service/src/main/java/com/upgrad/musichoster/service/business/AdminServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/musichoster-api/src/main/java/com/upgrad/musichoster/api/controller/AuthenticationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/musichoster-api/src/main/java/com/upgrad/musichoster/api/controller/AuthenticationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/musichoster-api/src/main/java/com/upgrad/musichoster/api/controller/SignupController.java" beforeDir="false" afterPath="$PROJECT_DIR$/musichoster-api/src/main/java/com/upgrad/musichoster/api/controller/SignupController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/musichoster-service/target/classes/com/upgrad/musichoster/service/entity/MusicEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/musichoster-service/target/classes/com/upgrad/musichoster/service/entity/MusicEntity.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +58,10 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1586699881266" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/postgresql-42.0.0.jar!/" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -119,25 +125,29 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="537" y="292" width="462" height="287" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.864@0.0.1536.864" timestamp="1587026591950" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1588577494250">
+    <state x="146" y="0" key="FileChooserDialogImpl" timestamp="1588585224939">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1588577494250" />
-    <state width="1493" height="277" key="GridCell.Tab.0.bottom" timestamp="1586964088831">
-      <screen x="0" y="0" width="1536" height="864" />
+    <state x="146" y="0" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1588585224939" />
+    <state width="1493" height="482" key="GridCell.Tab.0.bottom" timestamp="1588585418264">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1493" height="482" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1588585418264" />
     <state width="1493" height="277" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1586964088831" />
-    <state width="1493" height="277" key="GridCell.Tab.0.center" timestamp="1586964088831">
-      <screen x="0" y="0" width="1536" height="864" />
+    <state width="1493" height="482" key="GridCell.Tab.0.center" timestamp="1588585418264">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1493" height="482" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1588585418264" />
     <state width="1493" height="277" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1586964088831" />
-    <state width="1493" height="277" key="GridCell.Tab.0.left" timestamp="1586964088830">
-      <screen x="0" y="0" width="1536" height="864" />
+    <state width="1493" height="482" key="GridCell.Tab.0.left" timestamp="1588585418264">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1493" height="482" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1588585418264" />
     <state width="1493" height="277" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1586964088830" />
-    <state width="1493" height="277" key="GridCell.Tab.0.right" timestamp="1586964088831">
-      <screen x="0" y="0" width="1536" height="864" />
+    <state width="1493" height="482" key="GridCell.Tab.0.right" timestamp="1588585418264">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1493" height="482" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1588585418264" />
     <state width="1493" height="277" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1586964088831" />
     <state width="1493" height="277" key="GridCell.Tab.1.bottom" timestamp="1586964088831">
       <screen x="0" y="0" width="1536" height="864" />
@@ -155,26 +165,14 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="1493" height="277" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1586964088831" />
+    <state x="249" y="0" key="SettingsEditor" timestamp="1588585233490">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1588585233490" />
     <state x="465" y="244" key="com.intellij.ide.util.TipDialog" timestamp="1588581376676">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="465" y="244" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1588581376676" />
     <state x="465" y="256" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1587020240523" />
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>

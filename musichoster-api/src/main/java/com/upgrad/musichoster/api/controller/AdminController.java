@@ -16,6 +16,7 @@ import com.upgrad.musichoster.api.model.*;
 import java.time.ZonedDateTime;
 import java.util.UUID;
 
+@RestController
 @RequestMapping("/")
 public class AdminController {
 

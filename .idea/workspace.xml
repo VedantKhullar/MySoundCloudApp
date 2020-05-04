@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e6b64117-b61d-4ad9-b3a7-7fc3c964cbcf" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/musichoster-api/src/main/java/com/upgrad/musichoster/api/controller/SignupController.java" beforeDir="false" afterPath="$PROJECT_DIR$/musichoster-api/src/main/java/com/upgrad/musichoster/api/controller/SignupController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/musichoster-service/src/main/java/com/upgrad/musichoster/service/business/SignupBusinessServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/musichoster-service/src/main/java/com/upgrad/musichoster/service/business/SignupBusinessServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

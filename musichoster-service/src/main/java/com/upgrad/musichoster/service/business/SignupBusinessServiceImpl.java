@@ -21,9 +21,16 @@ public class SignupBusinessServiceImpl implements SignupBusinessService {
 	@Override
 	@Transactional(propagation = Propagation.REQUIRED)
 	public UserEntity signup(UserEntity userEntity) throws SignUpRestrictedException{
+
+		String[] encyrptedText = passwordCryptographyProvider.encrypt(userEntity.getPassword());
+
 		String regex = "^[\\w!#$%&’*+/=?`{|}~^-]+(?:\\.[\\w!#$%&’*+/=?`{|}~^-]+)*@(?:[a-zA-Z0-9-]+\\.)+[a-zA-Z]{2,6}$";
 		Pattern pattern = Pattern.compile(regex);
 		Matcher matcher = pattern.matcher(userEntity.getEmail());
+
+		userEntity.setSalt(encyrptedText[0]);
+		userEntity.setPassword(encyrptedText[1]);
+		return userDao.createUser(userEntity);
 
 	}
 }

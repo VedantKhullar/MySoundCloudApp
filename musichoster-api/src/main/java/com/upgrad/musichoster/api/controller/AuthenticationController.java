@@ -36,5 +36,13 @@ public class AuthenticationController {
 
         UserEntity user = userAuthToken.getUser();
 
+        AuthorizedUserResponse authorizedUserResponse = new AuthorizedUserResponse().id(UUID.fromString(user.getUuid()))
+                .firstName(user.getFirstName()).lastName(user.getLastName()).emailAddress(user.getEmail()).mobilePhone(user.getMobilePhone())
+                .lastLoginTime(user.getLastLoginAt()).role(user.getRole());
+        HttpHeaders headers = new HttpHeaders();
+        headers.add("access-token", userAuthToken.getAccessToken());
+        return new ResponseEntity<AuthorizedUserResponse>(authorizedUserResponse, headers, HttpStatus.OK);
+
+
     }
 }

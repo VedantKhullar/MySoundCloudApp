@@ -19,6 +19,13 @@ import org.springframework.transaction.annotation.Transactional;
 			throws MusicNotFoundException, UnauthorizedException, UserNotSignedInException {
 		UserAuthTokenEntity userAuthTokenEntity = musicDao.getUserAuthToken(authorization);
 		String role = userAuthTokenEntity.getUser().getRole();
+
+		MusicEntity musicEntity = musicDao.getMusic(musicUuid);
+
+		if(userAuthTokenEntity == null)
+			throw new UnauthorizedException("ATHR-001","The User is not signed in");
+
+		return musicEntity;
 	}
 
 	@Override @Transactional(propagation = Propagation.REQUIRED)
@@ -38,6 +45,8 @@ import org.springframework.transaction.annotation.Transactional;
 			musicEntity.setCreated_at(existingmusicEntity.getCreated_at());
 
 		}
+
+		return musicDao.updateMusic(musicEntity);
 	}
 
 	@Override
@@ -47,6 +56,10 @@ import org.springframework.transaction.annotation.Transactional;
 		UserAuthTokenEntity userAuthTokenEntity = musicDao.getUserAuthToken(authorization);
 
 		String role = userAuthTokenEntity.getUser().getRole();
+
+		MusicEntity musicEntity = musicDao.getMusicById(musicId);
+		if(userAuthTokenEntity == null) throw new UnauthorizedException("ATHR-002","The Music has not been updated yet");
+		return musicEntity;
 
 	}
 }

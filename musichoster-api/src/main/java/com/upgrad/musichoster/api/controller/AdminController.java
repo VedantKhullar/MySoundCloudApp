@@ -13,6 +13,9 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import com.upgrad.musichoster.api.model.*;
 
+import java.time.ZonedDateTime;
+import java.util.UUID;
+
 @RequestMapping("/")
 public class AdminController {
 
@@ -36,7 +39,19 @@ public class AdminController {
     public ResponseEntity<UpdateMusicResponse> updateMusic(@RequestBody(required = false) final UpdateMusicRequest updateMusicRequest, @PathVariable("music_id") final long music_id, @RequestHeader("authorization") final String authorization) throws MusicNotFoundException, UnauthorizedException, UserNotSignedInException {
         MusicEntity musicEntity = new MusicEntity();
 
+        musicEntity.setMusic(updateMusicRequest.getMusic());
+        musicEntity.setName(updateMusicRequest.getName());
+        musicEntity.setStatus(updateMusicRequest.getStatus());
+        musicEntity.setDescription(updateMusicRequest.getDescription());
+        musicEntity.setId(music_id);
+        musicEntity.setUuid(UUID.randomUUID().toString());
+        musicEntity.setCreated_at(ZonedDateTime.now());
 
+        MusicEntity updatedMusicEntity = adminService.updateMusic(musicEntity,authorization);
+
+        UpdateMusicResponse response = new UpdateMusicResponse().id((int)updatedMusicEntity.getId()).status(updatedMusicEntity.getStatus());
+
+        return new ResponseEntity<UpdateMusicResponse>(response,HttpStatus.CREATED);
 
 
     }
@@ -47,6 +62,8 @@ public class AdminController {
         MusicEntity updatedmusicEntity = adminService.updateMusicStatus(music_id, status, authorization);
 
         UpdateMusicResponse updateMusicResponse = new UpdateMusicResponse().id((int) updatedmusicEntity.getId()).status(updatedmusicEntity.getStatus());
+
+        return new ResponseEntity<>(updateMusicResponse,HttpStatus.CREATED);
 
     }
 
